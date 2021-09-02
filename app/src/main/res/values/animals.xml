@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="animals">
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Monkey</item>
+        <item>Lion</item>
+        <item>Elephant</item>
+        <item>Mouse</item>
+        <item>Snake</item>
+        <item>Tiger</item>
+        <item>Puma</item>
+        <item>Cow</item>
+        <item>Horse</item>
+        <item>Bull</item>
+        <item>Pig</item>
+        <item>Jaguar</item>
+        <item>Panda</item>
+    </string-array>
+
+</resources>
