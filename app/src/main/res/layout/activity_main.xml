@@ -40,6 +40,8 @@
     <ListView
         android:id="@+id/lv_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:divider="@color/design_default_color_primary"
+        android:dividerHeight="3dp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
