@@ -59,7 +59,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        buttonAnimals.setOnClickListener {
 
+            val animalList = resources.getStringArray(R.array.animals)
 
+            val myAnimalAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,
+                animalList)
+
+            myListView.adapter = myAnimalAdapter
+
+            myListView.setOnItemClickListener { parent, view, position, id ->
+                Toast.makeText(this, "Pressed Item: ${animalList[position]} ($position)",
+                    Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
