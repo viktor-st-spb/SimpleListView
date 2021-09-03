@@ -15,7 +15,8 @@
         android:text="Names"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_fruits"

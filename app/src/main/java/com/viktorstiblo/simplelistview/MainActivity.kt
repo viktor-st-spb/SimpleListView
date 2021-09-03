@@ -15,11 +15,12 @@ class MainActivity : AppCompatActivity() {
         val buttonFruits = findViewById<Button>(R.id.btn_fruits)
         val buttonAnimals = findViewById<Button>(R.id.btn_animals)
 
-
+        /******** Created the list of Names *******/
         val nameList = listOf("Vick","Alex","Valery","Dmitriy","Vladimir","Vitaliy",
             "Nick","Peter","Ed","Bob","Michail","Semen","Evgeniy","Stanislav","Nikolay")
-
+        /******* Created an array list of strings *******/
         val fruitList = ArrayList<String>()
+        /******* Added names to array list of strings *******/
         fruitList.add("Apple")
         fruitList.add("Lime")
         fruitList.add("Melon")
@@ -36,11 +37,13 @@ class MainActivity : AppCompatActivity() {
         fruitList.add("Kiwi")
         fruitList.add("PineApple")
 
+        /***** Button on click listener implemented ******/
         buttonNames.setOnClickListener {
+            // Created an adapter
             val myNamesAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, nameList)
-
+            // Assigned an adapter to list view
             myListView.adapter = myNamesAdapter
-
+            // On item click listener with toast message
             myListView.setOnItemClickListener { parent, view, position, id ->
                 Toast.makeText(this, "Pressed Item: ${nameList[position]} ($position)",
                     Toast.LENGTH_SHORT).show()
@@ -61,6 +64,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonAnimals.setOnClickListener {
 
+            /****** Get animal list from res/values/animals.xml file ******/
             val animalList = resources.getStringArray(R.array.animals)
 
             val myAnimalAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,
