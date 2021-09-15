@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#E5D240"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,17 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
+        android:backgroundTint="#60E0C3"
         android:text="Names"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_fruits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
+        android:backgroundTint="#FFEB3B"
         android:text="Fruits"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -33,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
+        android:backgroundTint="#B788E5"
         android:text="Animals"
         android:textAllCaps="false"
         android:textColor="@color/black"
@@ -43,6 +46,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@color/design_default_color_primary"
-        android:dividerHeight="3dp"/>
+        android:dividerHeight="3dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
